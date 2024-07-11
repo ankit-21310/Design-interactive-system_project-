@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>3d model</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.37.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="/static/main.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/static/css/index.css">
+	<link rel="stylesheet" href="/style.css">
+
+
+	<!-- <title>B3DVision</title> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+	<link href="style.css" rel="stylesheet">
+
+	<style>
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-end;
+			/* positions items to the right */
+		}
+
+		nav li {
+			margin-left: 80px;
+			/* adds some space between items */
+		}
+
+		.dropdown-menu {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			padding: 0;
+			transition: opacity 0.2s ease-out;
+			opacity: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+		}
+
+		.dropdown-menu.show {
+			opacity: 1;
+		}
+
+		.dropdown-item:hover {
+			background-color: #f2f2f2;
+		}
+
+		.nav-link {
+			position: relative;
+			padding-left: 10px;
+			margin-right: 10px;
+			color: #333;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.nav-link:hover {
+			color: #666;
+		}
+
+		.nav-link:hover .dropdown-menu {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.dropdown-menu li {
+			padding: 5px 20px;
+		}
+
+		.btn {
+			background-color: white;
+			color: #FF4500;
+			border-color: #FF4500;
+		}
+
+		.btn:hover {
+			background-color: #FF4500;
+			border-color: #FF4500;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="/new_logo.png" alt="" width="50px"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+					<li class="nav-item">
+						<a class="nav-link active" href="/home2.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#"><b>A-Library</b></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/feature.html">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Review</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="nav-item dropdown ml-auto">
+
+		<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+			style="padding-left: 10px; margin-right: 10px;">
+			&nbsp;&nbsp;&nbsp;&nbsp; Let's Visualise
+		</a>
+		<ul class="dropdown-menu">
+
+			<!-- <li><a class="dropdown-item" href="#">Ear</a></li> -->
+			<li><a class="dropdown-item" href="/3d-model-main/BrainGltf/Brain.html">Brain</a></li>
+			<li><a class="dropdown-item" href="/3d-model-main/HeartGltf/Heart.html">Heart</a></li>
+			<li><a class="dropdown-item" href="/3d-model-main/LungsGltf/Lungs.html">Lungs</a></li>
+			<li><a class="dropdown-item" href="/3d-model-main/KidneyGltf/Kidney.html">Kidney</a>
+			</li>
+			<!-- <li><a class="dropdown-item" href="#">Bowel</a></li>
+			<li><a class="dropdown-item" href="#">Gastrointestinal tract</a></li> -->
+			<hr class="dropdown-divider">
+			<li><a class="dropdown-item" href="/3d-model-main/HumanAnatomy-master/pages/systems/skeletal.html">Skeleton System</a></li>
+			<hr class="dropdown-divider">
+			<li><a class="dropdown-item"
+					href="/3d-model-main/HumanAnatomy-master/pages/systems/muscular.html">Muscular</a>
+			</li>
+			<hr class="dropdown-divider">
+			<li><a class="dropdown-item"
+					href="/3d-model-main/HumanAnatomy-master/pages/systems/circulatory.html">Circulatory
+					System</a></li>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 3D content for your site: -->
+
+	<model-viewer src="scene.gltf" alt="A 3D body Model" shadow-intensity="1" camera-controls auto-rotate ar>
+	</model-viewer>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>QUICK LINKS</h4>
+					<ul>
+						<li><a href="home2.html">Home</a></li>
+						<li><a href="#">A-Library</a></li>
+						<li><a href="feature.html">Features</a></li>
+						<li><a href="#Review">Review</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Customer Support</h4>
+					<ul>
+						<li><a href="#">Support Site</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Submit a Query</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Contact Us</h4>
+					<ul>
+						<li><a href="#"><i class='bx bxs-envelope'></i> info@b3dvision.co.in</a></li>
+						<li><a href="#"><i class='bx bxs-phone'></i> +91-9198999999</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- 💁 Include both scripts below to support all browsers! -->
+
+	<!-- Loads <model-viewer> for modern browsers: -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	</script>
+
+	<!-- Loads <model-viewer> for old browsers like IE11: -->
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+	<script src="/static/main.js"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+
+</html>
